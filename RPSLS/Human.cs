@@ -6,32 +6,39 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Human : Player
+    public class Human : Player
     {
         //variables
-        public string userChoice;
-        
-        
-           
-        //constructor
 
+
+
+
+        //constructor
+        public Human()
+        {
+
+        }
 
 
 
         //methods(can do)(can choose what they want to play)
-        public void PlayerChoice()
+
+        //This allows the human player to choose their gesture 
+        public override string ChooseGesture()
         {
             Console.WriteLine("Please choose Rock, Paper, Scissors, Lizard, Spock");
-            userChoice = Console.ReadLine().ToUpper();
-            
-           
-        
-
-        
+            playerGesture = Console.ReadLine().ToUpper();
+            Console.WriteLine("You chose " + playerGesture);
+            Console.ReadLine();
+            return playerGesture;
         
         }
 
 
 
-     }
+       
+
+
+
+    }
 }

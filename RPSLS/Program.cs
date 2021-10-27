@@ -12,8 +12,8 @@ namespace RPSLS
         {
             Game game1 = new Game();
             game1.Instructions();
-            game1.ChoosePlayer2();
-            game1.Player1Gesture();
+            game1.ChoosePlayer2();                      
+            game1.DetermineWinner();
         }
     }
 }
